@@ -1,3 +1,94 @@
-p{
-    color: red;
+
+.row{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+.padded{
+    padding: 20px;
+}
+
+.vh{
+    height: 60vh !important;
+}
+
+.image_box{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    height: 100%;
+    width: 25%;
+    background-size: cover;
+    margin: 5px;
+}
+
+.time, .type{
+    padding: 10px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.time{
+    background-color: greenyellow;
+    padding-left: 40px;
+}
+
+.type{
+    background-color: white;
+    padding-left: 20px;
+}
+
+nav{
+    background-color: white;
+    justify-content: space-between;
+    position: sticky;
+    color: rgb(68, 182, 33);
+    font-weight: 1000;
+    width: 99vw;
+    margin: 0px !important;
+    padding: 5px 10px;
+}
+nav > h1 span{
+    color: red !important;
+    padding: 0px;
+}
+
+nav ul{
+  list-style-type: none;
+  text-decoration: none !important;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-self: center;
+  text-align: center;
+  width: 20vw;
+  padding: 10px;
+}
+nav li{
+    text-decoration: none !important;
+}
+
+body, section{
+    background-color: gainsboro;
+    margin: 0px;
+    font-family: sans-serif;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+
+article{
+    padding: 10px;
+}
+
+
+.footer {  
+    align-self: center;
+    flex:1;
+    width: 100%;
+    text-align: center !important;
+    justify-self: center;
+    margin: 10px 0px;
+    color: white;
 }
