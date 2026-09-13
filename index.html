@@ -1,10 +1,134 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        
-    </head>
-    <body>
-        this is for my college.
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my-project</title>
+    <link href="/src/style.css" rel="stylesheet">
+  </head>
 
-    </body>
+  <div class="vignette"></div>
+  <div class="overlay"></div>
+  <body class="blur-[0.15px] bg-[#0d0019] font-mono text-[#E5F2C9] h-screen overflow-clip text-center grid grid-flow-col lg:grid-cols-[auto_minmax(25px,1fr)]">
+    <div class="lg:inline hidden w-90 p-25 scale-120 bg-[url(/src/assets/space.png)] top-0 border-r-2">
+      <h1 class="text-3xl">WEBDEV PROJECT</h1>
+      <div class="Buttons text-2xl grid">
+        <button onclick="switch_to(0)" class="main main_button transition hover:translate-x-1 hover:text-sky-100">main</button>
+        <button onclick="switch_to(1)" class="about main_button transition hover:translate-x-1 hover:text-sky-100">about</button>
+        <button onclick="switch_to(2)" class="services main_button transition hover:translate-x-1 hover:text-sky-100">blog</button>
+        <button onclick="switch_to(3)" class="credits main_button transition hover:translate-x-1 hover:text-sky-100">credits</button>
+
+      </div>
+      <div class="justify-self-end">
+        <button onclick="switch_to(4)" class="off_button hover:scale-120 transition hover:text-sky-100">⏻</button>
+      </div>
+    </div>
+    <div class="bg-cover backdrop-blur-sm background">
+      <div class="section z-10 m-5 content-center bg-[#020c2731] w-auto h-auto">
+         <p>main.html</p>
+         <div class="backdrop-blur-md w-50 m-auto bg-[#1a022740] grid">
+          <div class="flex justify-between bg-[#56144756] px-2">
+            <p><pre>X - &lt;></pre></p>
+            <p>welcome.txt</p>
+          </div>
+          <div class="border-2"></div>
+            <p class="p-5">Welcome to my website</p>
+         </div>
+         <div class="grid grid-flow-col lg:grid-cols-2 lg:grid-rows-1 grid-rows-2 grid-cols-1">
+          <div class="backdrop-blur-md w-70 m-auto bg-[#1a022740] grid">
+            <div class="flex justify-between bg-[#56144756] px-2">
+              <p><pre>X - &lt;></pre></p>
+              <p>purpose.txt</p>
+            </div>
+            <div class="border-2"></div>
+            <p class="p-5">This is a website about my interests and games</p>
+          </div>
+         <div class="backdrop-blur-md w-60 mx-auto my-5 bg-[#1a022740] grid">
+            <div class="flex justify-between bg-[#56144756] px-2">
+                <p><pre>X - &lt;></pre></p>
+                <p>sidfeuiwd.txt</p>
+            </div>
+            <div class="border-2"></div>
+            <p class="p-5">It's meant to be slightly desktop inspired</p>
+          </div>
+         </div>
+         <div class="backdrop-blur-md w-60 mx-auto my-5 bg-[#0400259c]">
+            This website is unfinished !
+         </div>
+      </div>
+      <div class="section z-10 content-center text-left overflow-scroll">
+        <div class="overflow-scroll h-lvh p-5">
+         <p>about.json</p>
+         <br>
+         <p>PREAMBLE:[</p>
+         <p class="m-5">
+          {<br>
+          <span class="text-lime-400">"text"</span>: "The original goal of this website was to make something fun and stylised. while i don't feel i fully met that goal, i am mostly happy with the vibe."
+          <br>}
+        </p>
+         <p>]</p>
+         <br>
+         <h2>PROJECTS:[</h2>
+        <p class="m-5">
+          {<br>
+          <span class="text-lime-400">"name"</span>: "SPACEFARM"<br>
+          <span class="text-lime-400">"icon"</span>: <img src="/src/assets/icons/farm.svg">
+          <span class="text-lime-400">"description"</span>: "A game about farming in space! You follow a girl who discovers she has an uncurable disease and decides to leave her life behind for the stars."
+          <br>}<br><br>
+          {<br>
+          <span class="text-lime-400">"name"</span>: "Sparking Descent"<br>
+          <span class="text-lime-400">"icon"</span>: <img src="">
+          <span class="text-lime-400">"description"</span>: "You're an assasin sent to kill a crime lord in a world where interplanetary spacetravel has been achieved with the aide of magic."
+          <br>}<br><br>
+          {<br>
+          <span class="text-lime-400">"name"</span>: "Wizard Cardgame"<br>
+          <span class="text-lime-400">"icon"</span>: <img src="">
+          <span class="text-lime-400">"description"</span>: "Tired of semantic components and memorizing books? Well look no further! In wizard cardgame you can show off you sweet spells with nothing but cards!"
+          <br>}
+          <p>]</p><br><br>
+        </p>
+         <div class="grid grid-flow-col">
+          <img src="">
+         </div>
+        </div>
+      </div>
+      <div class="section z-10 m-5 content-center">
+         <p>Blog</p>
+         <div markdown="1"></div>
+      </div>
+      <div class="section z-10 m-5 content-center bg-black">
+         <p>credits.md</p>
+         <p>
+          No AI was used in the making of this or any of my projects
+         </p>
+         <br>
+         <h1>CSS filter examples used:</h3>
+         <p>
+          <a class="text-sky-200" href="https://codepen.io/ynef/pen/yvvyGv"> ynef: CSS Scanlines</a><br>
+          <a class="text-sky-200" href="https://github.com/D3nn7/crt-css">D3nn7: CSS CRT</a>
+         </p>
+      </div>
+
+      <div class="section show z-10 m-10 p-5 content-cente self-center content-center h-auto">
+         <p>SYSTEM OFFLINE</p>
+      </div>
+    </div>
+    <div class="fixed right-1 bottom-1 m-5 grid text-right shadow-2xl">
+      <p class="">FOOTER</p>
+      <div class="inline lg:hidden "><button onclick="switch_to(0)" class="main main_button transition hover:translate-x-1 hover:text-sky-100">main</button>
+        <button onclick="switch_to(1)" class="about main_button transition hover:translate-x-1 hover:text-sky-100">about</button>
+        <button onclick="switch_to(2)" class="services main_button transition hover:translate-x-1 hover:text-sky-100">blog</button>
+        <button onclick="switch_to(3)" class="credits main_button transition hover:translate-x-1 hover:text-sky-100">credits</button>
+      </div>
+    </div>
+
+    <div class="hidden bg-[url(/src/assets/space.png)]"></div>
+    <div class="hidden bg-[url(/src/assets/sunrise.jpg)]"></div>
+    <div class="hidden bg-[url(/src/assets/marble.jpg)]"></div>
+    <div class="hidden bg-[url(/src/assets/bg.png)]"></div>
+
+    <script type="module" src="/src/main.js"></script>
+    <script src="/src/buttons.js"></script>
+  </body>
 </html>
