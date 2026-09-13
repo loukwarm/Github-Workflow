@@ -1,5 +1,6 @@
 {
   "name": "hackathon-thing",
+  "homepage": "https://loukwarm.github.io/Github-Workflow/",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -13,6 +14,8 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
+    "gh-pages": "^6.3.0",
+    "ghpages": "^0.0.10",
     "tailwindcss": "^4.3.3"
   }
 }
